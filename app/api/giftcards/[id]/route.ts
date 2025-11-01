@@ -7,11 +7,11 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-producti
 // GET - Obtener una giftcard específica por número
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> | { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    // Manejar params que puede ser Promise en Next.js 15+
-    const resolvedParams = params instanceof Promise ? await params : params
+    // Manejar params que es Promise en Next.js 16+
+    const resolvedParams = await params
     
     let token = request.headers.get('authorization')?.replace('Bearer ', '')
     
@@ -120,11 +120,11 @@ export async function GET(
 // PUT - Actualizar la imagen de una giftcard
 export async function PUT(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> | { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    // Manejar params que puede ser Promise en Next.js 15+
-    const resolvedParams = params instanceof Promise ? await params : params
+    // Manejar params que es Promise en Next.js 16+
+    const resolvedParams = await params
     
     const body = await request.json()
     const { token, imageUrl } = body
