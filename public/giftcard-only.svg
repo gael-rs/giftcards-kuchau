@@ -1,0 +1,85 @@
+<svg width="400" height="533" viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente amarillo principal -->
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fde047;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente gris para el código -->
+    <linearGradient id="grayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111827;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shine gradient -->
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Sombra -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+    
+    <!-- Sombra del texto del código -->
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/>
+    </filter>
+    
+    <!-- Patrón de puntos -->
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(0,0,0,0.05)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fondo de la giftcard con bordes -->
+  <rect width="400" height="533" rx="16" fill="url(#yellowGradient)" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/>
+  
+  <!-- Patrón de puntos sutiles -->
+  <rect width="400" height="533" rx="16" fill="url(#dots)" opacity="0.3"/>
+  
+  <!-- Efecto shine superior -->
+  <rect width="400" height="200" rx="16" fill="url(#shineGradient)" opacity="0.4"/>
+  
+  <!-- Header: Gift Card -->
+  <g transform="translate(24, 32)">
+    <text x="0" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#1f2937">Gift Card</text>
+    <text x="0" y="48" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#374151" opacity="0.9">Regalo Especial</text>
+    
+    <!-- Icono regalo simplificado -->
+    <g transform="translate(295, 0)">
+      <text x="0" y="35" font-size="48" fill="#1f2937" opacity="0.9">🎁</text>
+    </g>
+  </g>
+  
+  <!-- Caja blanca del código -->
+  <rect x="24" y="240" width="352" height="130" rx="12" fill="rgba(255,255,255,0.95)" stroke="#1f2937" stroke-width="2" opacity="0.95" filter="url(#shadow)"/>
+  
+  <!-- Texto "CÓDIGO" -->
+  <text x="44" y="270" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#374151" letter-spacing="1.5">CÓDIGO</text>
+  
+  <!-- Caja oscura del código -->
+  <rect x="44" y="285" width="312" height="65" rx="8" fill="url(#grayGradient)" stroke="#030712" stroke-width="1" filter="url(#shadow)"/>
+  
+  <!-- Texto del código (placeholder) - se reemplazará dinámicamente -->
+  <text x="200" y="325" font-family="Courier, monospace" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle" filter="url(#textShadow)" letter-spacing="2">hxp{4ld0d4m3l4g1fc4rdg1l}</text>
+  
+  <!-- Footer: Círculos decorativos -->
+  <g transform="translate(44, 470)">
+    <!-- Círculo 1 -->
+    <circle cx="0" cy="0" r="16" fill="rgba(31,41,55,0.4)" stroke="rgba(31,41,55,0.2)" stroke-width="2" filter="url(#shadow)"/>
+    <!-- Círculo 2 -->
+    <circle cx="28" cy="0" r="16" fill="rgba(31,41,55,0.3)" stroke="rgba(31,41,55,0.2)" stroke-width="2" filter="url(#shadow)"/>
+  </g>
+  
+  <!-- Número de giftcard -->
+  <text x="356" y="485" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#1f2937" text-anchor="end">#000XXX</text>
+  
+  <!-- Efecto holográfico (opcional, línea animada) -->
+  <line x1="0" y1="0" x2="0" y2="533" stroke="rgba(255,255,255,0.2)" stroke-width="200" transform="skewX(-12)" opacity="0.3"/>
+</svg>
