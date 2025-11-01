@@ -97,7 +97,7 @@ body {
 }
 
 /* Side bubbles (static columns) */
-.bubbles { position: absolute; inset: 0; z-index: 10; pointer-events: none; }
+.bubbles { position: absolute; inset: 0; z-index: 50; pointer-events: none; }
 .bubbles-fixed { position: absolute; inset: 0; pointer-events: none; }
 .bubble-abs { position: absolute; }
 .bubble {

@@ -99,21 +99,21 @@ export default function HomePage() {
       <div className="bubbles">
         <div className="bubbles-fixed">
           {/* GIFT - izquierda dispuestos en fila vertical y ligera curva */}
-          <button type="button" onClick={() => onLetterClick('G')} className="bubble bubble-cyan bubble-abs text-2xl cursor-pointer" style={{ left: '6%', top: '44%', zIndex: 15, pointerEvents: 'auto' }}>G</button>
-          <button type="button" onClick={() => onLetterClick('I')} className="bubble bubble-cyan bubble-abs text-2xl cursor-pointer" style={{ left: '10%', top: '47%', zIndex: 15, pointerEvents: 'auto' }}>I</button>
-          <button type="button" onClick={() => onLetterClick('F')} className="bubble bubble-cyan bubble-abs text-2xl cursor-pointer" style={{ left: '14%', top: '50%', zIndex: 15, pointerEvents: 'auto' }}>F</button>
-          <button type="button" onClick={() => onLetterClick('T')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ left: '18%', top: '53%', zIndex: 15, pointerEvents: 'auto' }}>T</button>
+          <button type="button" onClick={() => onLetterClick('G')} className="bubble bubble-cyan bubble-abs text-2xl cursor-pointer" style={{ left: '6%', top: '44%', zIndex: 60, pointerEvents: 'auto' }}>G</button>
+          <button type="button" onClick={() => onLetterClick('I')} className="bubble bubble-cyan bubble-abs text-2xl cursor-pointer" style={{ left: '10%', top: '47%', zIndex: 60, pointerEvents: 'auto' }}>I</button>
+          <button type="button" onClick={() => onLetterClick('F')} className="bubble bubble-cyan bubble-abs text-2xl cursor-pointer" style={{ left: '14%', top: '50%', zIndex: 60, pointerEvents: 'auto' }}>F</button>
+          <button type="button" onClick={() => onLetterClick('T')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ left: '18%', top: '53%', zIndex: 60, pointerEvents: 'auto' }}>T</button>
 
           {/* CARD - derecha en fila */}
-          <button type="button" onClick={() => onLetterClick('C')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '18%', top: '53%', zIndex: 15, pointerEvents: 'auto' }}>C</button>
-          <button type="button" onClick={() => onLetterClick('A')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '14%', top: '50%', zIndex: 15, pointerEvents: 'auto' }}>A</button>
-          <button type="button" onClick={() => onLetterClick('R')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '10%', top: '47%', zIndex: 15, pointerEvents: 'auto' }}>R</button>
-          <button type="button" onClick={() => onLetterClick('D')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '6%', top: '44%', zIndex: 15, pointerEvents: 'auto' }}>D</button>
+          <button type="button" onClick={() => onLetterClick('C')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '18%', top: '53%', zIndex: 60, pointerEvents: 'auto' }}>C</button>
+          <button type="button" onClick={() => onLetterClick('A')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '14%', top: '50%', zIndex: 60, pointerEvents: 'auto' }}>A</button>
+          <button type="button" onClick={() => onLetterClick('R')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '10%', top: '47%', zIndex: 60, pointerEvents: 'auto' }}>R</button>
+          <button type="button" onClick={() => onLetterClick('D')} className="bubble bubble-abs text-2xl cursor-pointer" style={{ right: '6%', top: '44%', zIndex: 60, pointerEvents: 'auto' }}>D</button>
         </div>
       </div>
 
       {/* Centered stack */}
-      <div className="relative z-50 flex min-h-screen flex-col items-center justify-center px-6">
+      <div className="relative z-40 flex min-h-screen flex-col items-center justify-center px-6">
 
         <div className="w-full max-w-md rounded-2xl panel-bg border border-yellow-400/40 neon-outline p-6 sm:p-8 relative z-50">
           <h2 className="text-2xl font-semibold text-white text-center mb-6">
